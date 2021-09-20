@@ -1,0 +1,166 @@
+"Phrases"
+{
+	// god.sp
+	"God player"
+	{
+		"en"			"God player"
+	}
+	
+	"Enabled godmode for target"
+	{
+		"#format"		"{1:t}"
+		"en"			"enabled godmode for {1}."
+	}
+	
+	"Disabled godmode for target"
+	{
+		"#format"		"{1:t}"
+		"en"			"disabled godmode for {1}."
+	}
+	
+	// hp.sp
+	"HP amount"
+	{
+		"en"			"HP amount"
+	}
+	
+	"Set player HP"
+	{
+		"en"			"Set player HP"
+	}
+	
+	"Set HP for target"
+	{
+		"#format"		"{1:t},{2:d}"
+		"en"			"set HP for {1} to {2}."
+	}
+	
+	// speed.sp
+	"Speed amount"
+	{
+		"en"			"Speed amount"
+	}
+	
+	"Set player speed"
+	{
+		"en"			"Set player speed"
+	}
+	
+	"Set speed for target"
+	{
+		"#format"		"{1:t},{2:.2f}"
+		"en"			"set speed for {1} to {2}x."
+	}
+	
+	// colour.sp
+	"Colour name"
+	{
+		"en"			"Colour name"
+	}
+	
+	"Normal"
+	{
+		"en"			"Normal"
+	}
+	
+	"Black"
+	{
+		"en"			"Black"
+	}
+	
+	"Silver"
+	{
+		"en"			"Silver"
+	}
+	
+	"Red"
+	{
+		"en"			"Red"
+	}
+	
+	"Purple"
+	{
+		"en"			"Purple"
+	}
+	
+	"Green"
+	{
+		"en"			"Green"
+	}
+	
+	"Yellow"
+	{
+		"en"			"Yellow"
+	}
+	
+	"Blue"
+	{
+		"en"			"Blue"
+	}
+	
+	"Aqua"
+	{
+		"en"			"Aqua"
+	}
+	
+	"Orange"
+	{
+		"en"			"Orange"
+	}
+	
+	"Gold"
+	{
+		"en"			"Gold"
+	}
+	
+	"Pink"
+	{
+		"en"			"Pink"
+	}
+	
+	"Half-Invisible"
+	{
+		"en"			"Half-Invisible"
+	}
+	
+	"Invisible"
+	{
+		"en"			"Invisible"
+	}
+	
+	"Set player colour"
+	{
+		"en"			"Set player colour"
+	}
+	
+	"Set colour for target"
+	{
+		"#format"		"{1:t},{2:d},{3:d},{4:d},{5:d}"
+		"en"			"set colour for {1} to RGB({2},{3},{4},{5})."
+	}
+	
+	// hmm_fun.sp
+	"Invalid RenderFx"
+	{
+		"#format"		"{1:s}"
+		"en"			"Invalid RenderFx {1}."
+	}
+	
+	"Set RenderFx for target"
+	{
+		"#format"		"{1:t},{2:s}"
+		"en"			"set RenderFx for {1} to {2}."
+	}
+	
+	"Invalid Model"
+	{
+		"#format"		"{1:s}"
+		"en"			"Invalid model {1}."
+	}
+	
+	"Set model for target"
+	{
+		"#format"		"{1:t},{2:s}"
+		"en"			"set player model for {1} to {2}."
+	}
+}
