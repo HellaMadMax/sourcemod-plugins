@@ -11,10 +11,12 @@ public Plugin myinfo = {
 
 ConVar g_botQuota
 ConVar g_botEmpty
+ConVar g_botStop
 public void OnPluginStart() {
 	g_botQuota = CreateConVar("hmm_botquota", "16", "How many RCBots to add (minus non-spectator players)", 0, true, 0.0, true, float(MaxClients-1))
 	g_botQuota.AddChangeHook(OnBotQuotaChange)
 	g_botEmpty = CreateConVar("hmm_botempty", "1", "Keep RCBots on empty server", 0, true, 0.0, true, 1.0)
+	g_botStop = FindConVar("rcbot_stop")
 	HookEvent("player_team", OnBotTeamChange, EventHookMode_Pre)
 }
 
@@ -87,6 +89,9 @@ public void OnGameFrame() {
 		int quota = bot_quota - players
 		if (!g_botEmpty.BoolValue && inactive + players < 1 || quota < 0) {
 			quota = 0
+			g_botStop.BoolValue = true
+		} else {
+			g_botStop.BoolValue = false
 		}
 		if (inactive + players + quota >= MaxClients) {
 			quota = quota - ((inactive + players + quota) - MaxClients + 2)
